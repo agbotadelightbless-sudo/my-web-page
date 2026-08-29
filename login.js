@@ -5,7 +5,7 @@ function login() {
 
     if (username === "admin" && password === "22446") {
         alert("Login successful!");
-        window.location.href = "Home Page/home.html";
+        window.location.href = "/home.html";
     } else {
       check.style.color = "red"
       //  alert("Incorrect username or password");
