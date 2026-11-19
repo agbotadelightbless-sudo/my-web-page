@@ -1,4 +1,7 @@
-
+document.getElementById("login-form").addEventListener("submit", (event) => {
+    event.preventDefault();
+    login();
+});
 function login() {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
@@ -14,9 +17,4 @@ function login() {
     }
 }
 
-fetch("header.html")
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById("header").innerHTML = data;
-    });
       
